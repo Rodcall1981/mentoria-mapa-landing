@@ -320,6 +320,17 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .offer{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px 20px;padding:20px 24px;border:1px solid rgba(47,123,255,.35);border-radius:16px;background:linear-gradient(135deg,rgba(47,123,255,.12),rgba(47,123,255,.02))}
 .offer .l{font-family:Outfit;font-weight:400;font-size:17px} .offer .l small{display:block;font-family:Inter;font-size:12.5px;color:var(--gris);margin-top:2px}
 .offer .r{font-family:Outfit;font-weight:300;font-size:30px;letter-spacing:-.02em} .offer .r small{font-size:12px;color:var(--gris);letter-spacing:.2em;text-transform:uppercase;font-family:Outfit;font-weight:500;margin-left:8px}
+
+.llevas{margin-top:30px;border-top:1px solid var(--hair)}
+.llevas h3{font-size:12px;font-family:Outfit;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--azul);margin:22px 0 6px}
+.llevas ul{list-style:none}
+.llevas li{padding:11px 0;border-bottom:1px solid var(--hair);font-size:14.5px;color:var(--fg);opacity:.9;display:flex;gap:12px;align-items:flex-start}
+.llevas li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--azul);margin-top:9px}
+.vs{display:grid;gap:12px;margin-top:22px}
+@media(min-width:600px){.vs{grid-template-columns:1fr 1fr}}
+.vs div{padding:16px 18px;border:1px solid var(--hair);border-radius:14px;font-size:13.5px;color:var(--gris);line-height:1.5}
+.vs div b{display:block;font-family:Outfit;font-weight:500;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gris);margin-bottom:8px}
+.vs div.me{border-color:rgba(47,123,255,.35);color:var(--fg)} .vs div.me b{color:var(--azul)}
 /* cierre */
 .cierre{overflow:hidden}
 .cierre .bgph{position:absolute;inset:0;z-index:0}
@@ -689,7 +700,14 @@ footer .cred{font-size:11.5px;opacity:.7;grid-column:1/-1}
         <li><span class="num">03</span><div><b>Diagnóstico de 45 minutos</b><p>Llegamos con tus números hechos. Capacidad de crédito, lectura de lo que estás cotizando y descuento posible. En 24 horas recibes el informe por escrito.</p></div></li>
         <li><span class="num">04</span><div><b>Tú decides</b><p>Si calzas y hay cupo, partimos. Si no es el momento, el informe te dice qué hacer mientras tanto.</p></div></li>
       </ol>
-      <div class="offer rv d3"><div class="l">Diagnóstico MAPA<small>45 min + informe escrito · se abona completo a tu mentoría</small></div><div class="r">5 UF<small>5 cupos este mes</small></div></div></div>
+      <div class="offer rv d3"><div class="l">Diagnóstico MAPA<small>45 min + informe escrito · se abona completo a tu mentoría</small></div><div class="r">5 UF<small>5 cupos este mes</small></div></div>
+      <div class="llevas rv d3"><h3>Qué te llevas del diagnóstico</h3><ul>
+        <li>Tu capacidad real de compra en UF: cuántas propiedades, con qué pie y qué dividendo soportas hoy.</li>
+        <li>La lectura de lo que estás cotizando: bien, regular o mal comprado, y por qué (precio por metro, dividendo contra arriendo, comisión escondida).</li>
+        <li>El descuento que deberías conseguir en ese proyecto, y cómo.</li>
+        <li>Tus 3 a 5 pasos siguientes, en orden. El qué. El cómo es la mentoría.</li>
+      </ul>
+      <div class="vs"><div><b>Lo que te da el broker gratis</b>Te muestra su stock, te financia con su banco amigo y cobra 4% a la inmobiliaria cuando firmas.</div><div class="me"><b>Lo que te da el diagnóstico</b>Cuánto puedes comprar en cualquier proyecto, si lo que miras está bien comprado y cuánto descuento deberías exigir. Nadie gana cuando firmas.</div></div></div></div>
     <div class="bz formbox rv d2"><div class="in"><h3>Quiero mi diagnóstico</h3><p class="sub">Cuestionario de 2 minutos. Con esto llegamos a la reunión con tus números hechos.</p><form data-form novalidate>
   <div class="f"><label for="bn">Nombre</label><input id="bn" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre"></div>
   <div class="f2">
